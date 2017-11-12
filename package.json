@@ -1,0 +1,19 @@
+{
+  "name": "react-spa-modals",
+  "version": "1.0.0",
+  "description": "ReactJS Modal challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaiulian/react-spa-modals.git"
+  },
+  "author": "Iulian Vasile <vasileaiulian@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaiulian/react-spa-modals/issues"
+  },
+  "homepage": "https://github.com/vaiulian/react-spa-modals#readme"
+}
