@@ -26,3 +26,17 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.menuItem {
+  color: #000;
+}
+
+.menuItem a {
+  color: #000;
+  text-decoration: none;
+  width: 150px;
+}
+
+button:focus {
+  background-color: transparent !important
+}
