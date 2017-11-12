@@ -40,3 +40,7 @@
 button:focus {
   background-color: transparent !important
 }
+
+.myModal {
+  padding: 10px
+}

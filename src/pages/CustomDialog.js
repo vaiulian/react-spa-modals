@@ -28,10 +28,10 @@ class SimpleDialog extends React.Component {
   
       return (
         <Dialog open={this.state.open}>
-          <DialogTitle>Dialog Title</DialogTitle>
+          <DialogTitle>Modal Title</DialogTitle>
           <div>
-           here is my content
            {this.props.children}
+           <hr/>
            <DialogActions>
                <Button onClick={this.handleClose}>
                     Close Dialog
