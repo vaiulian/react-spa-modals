@@ -4,9 +4,7 @@ import Home from './Home';
 import About from './About';
 import Topics from './Topics';
 
-import {
-    Route
-  } from 'react-router-dom' 
+import { Route } from 'react-router-dom' 
 
 const Container = () => (
     <div className="container">

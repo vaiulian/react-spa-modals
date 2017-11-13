@@ -5,14 +5,31 @@ import Button from 'material-ui/Button';
 
 class About extends React.Component {
 
-    state = {
-        open: false,
-    };
+    constructor(props) {
+        super(props);
 
+        this.state = {
+            open: false
+        };
+    }
+
+
+    /**
+     * Function that triggers the first modal to open.
+     * Using ref dialog1 to access the .handleOpen method of the <SimpleDialog> component
+     * 
+     * @memberof About
+     */
     handleOpenFirst = () => {
         this.dialog1.handleOpen();
     };
 
+    /**
+     * Function that triggers the second modal to open.
+     * Using ref dialog2 to access the .handleOpen method of the <SimpleDialog> component
+     * 
+     * @memberof About
+     */
     handleOpenSecond = () => {
         this.dialog2.handleOpen();
     }

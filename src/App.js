@@ -21,53 +21,64 @@ import Container from './pages/Container';
 
 class App extends Component {
 
-  state = {
-    open: false,
-  };
+	state = {
+    	openDrawer: false,
+  	};
 
-  handleDrawerOpen = () => {
-    this.setState({ open: true });
-  };
+  /**
+   * Function that runs on opening the Drawer
+   * 
+   * @memberof App
+   */
+  	handleDrawerOpen = () => {
+    	this.setState({ openDrawer: true });
+  	};
 
-  handleDrawerClose = () => {
-    this.setState({ open: false });
-  };
 
-  render() {
-    return (
-      <Router>
-        <div>
+  /**
+   * Function that runs on closing the Drawer
+   * 
+   * @memberof App
+   */
+	handleDrawerClose = () => {
+    	this.setState({ openDrawer: false });
+  	};
 
-        <AppBar position="static">
-          <Toolbar>
-            <IconButton color="contrast" aria-label="Menu" onClick={this.handleDrawerOpen}>
-              <MenuIcon />
-            </IconButton>
-            <Typography type="title" color="inherit">
-              OwnZones React.js Challenge
-            </Typography>
-          </Toolbar>
-        </AppBar>
+  	render() {
+    	return (
+    		<Router>
+    			<div>
+
+        		<AppBar position="static">
+					<Toolbar>
+						<IconButton color="contrast" aria-label="Menu" onClick={this.handleDrawerOpen}>
+							<MenuIcon />
+						</IconButton>
+						<Typography type="title" color="inherit">
+						React.js Challenge
+						</Typography>
+					</Toolbar>
+        		</AppBar>
         
-        <Drawer
-          open={this.state.open}
-          onRequestClose={this.handleDrawerClose}
-        >
-          <MenuItem className="menuItem" onClick={this.handleDrawerClose}>
-            <Link to="/">Home</Link>
-          </MenuItem>
-          <MenuItem className="menuItem" onClick={this.handleDrawerClose}>
-            <Link to="/about">About</Link>
-          </MenuItem>
-          <MenuItem className="menuItem" onClick={this.handleDrawerClose}>
-            <Link to="/topics">Topics</Link>
-          </MenuItem>
-        </Drawer>
+				<Drawer
+				open={this.state.openDrawer}
+				onRequestClose={this.handleDrawerClose}
+				>
+					<MenuItem className="menuItem" onClick={this.handleDrawerClose}>
+						<Link to="/">Home</Link>
+					</MenuItem>
+					<MenuItem className="menuItem" onClick={this.handleDrawerClose}>
+						<Link to="/about">About</Link>
+					</MenuItem>
+					<MenuItem className="menuItem" onClick={this.handleDrawerClose}>
+						<Link to="/topics">Topics</Link>
+					</MenuItem>
+				</Drawer>
 
-        <Container />
+        		<Container />
 
-        </div>
-      </Router>
+        		</div>
+      		</Router>
     );
   }
 }
