@@ -72,11 +72,11 @@ class SimpleDialog extends React.Component {
         </Dialog>
       );
     }
-  }
+}
 
-  SimpleDialog.propTypes = {
+SimpleDialog.propTypes = {
     onClose: PropTypes.func,
     children: PropTypes.Object,
-  };
+};
 
 export default SimpleDialog;

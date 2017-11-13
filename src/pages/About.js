@@ -13,7 +13,6 @@ class About extends React.Component {
         };
     }
 
-
     /**
      * Function that triggers the first modal to open.
      * Using ref dialog1 to access the .handleOpen method of the <SimpleDialog> component
