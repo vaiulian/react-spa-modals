@@ -55,7 +55,7 @@ class App extends Component {
 							<MenuIcon />
 						</IconButton>
 						<Typography type="title" color="inherit">
-						Ownzones React.js Challenge
+						ReactJS Project
 						</Typography>
 					</Toolbar>
         		</AppBar>
